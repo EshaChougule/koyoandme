@@ -1,47 +1,94 @@
 /* ---------- LOCK SCREEN CSS ---------- */
 body.locked {
-  overflow: hidden;   /* disables scrolling when locked */
-  height: 100vh;      /* locks the viewport height */
+  overflow: hidden; /* disables scrolling when locked */
+  height: 100vh;    /* locks viewport height */
 }
 
-.lock-screen {
+.lockScreen {
   position: fixed;
-  inset: 0;  /* top:0; right:0; bottom:0; left:0; */
-  background: #000;  /* black overlay */
-  color: white;
-  z-index: 9999;     /* sits above everything */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #ffd6e8, #fbb1d3);
+  z-index: 9999;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
 }
 
-.lock-screen input {
-  padding: 10px;
+.lock-box {
+  background: white;
+  padding: 40px 35px;
+  border-radius: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(214,51,132,0.25);
+}
+
+.lock-box h1 {
+  font-size: 34px;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.lock-box p {
   font-size: 18px;
-  margin-top: 15px;
-  border-radius: 8px;
-  border: none;
+  color: #555;
+  margin-bottom: 25px;
 }
 
-.lock-screen button {
-  margin-top: 10px;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  background-color: #d63384;
-  color: white;
+.lock-box input {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.lock-box button {
+  width: 100%;
+  padding: 14px;
+  font-size: 18px;
   font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  background: #d63384;
+  color: white;
   cursor: pointer;
+  transition: 0.3s;
 }
 
-.lock-screen button:hover {
-  background-color: #b52e6e;
+.lock-box button:hover {
+  background: #b72b6f;
 }
 
+/* ---------- PAGE STYLING ---------- */
+body {
+  background: linear-gradient(135deg, #fdeff4, #fff5f8);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #333;
+}
 
-/* Cover page */
+h1 {
+  color: #d63384;
+  font-size: 38px;
+  margin-top: 30px;
+}
+
+h2 {
+  color: #b03060;
+  margin: 40px 0 20px;
+}
+
+/* Cover section */
 #cover {
   min-height: 100vh;
   background: linear-gradient(135deg, #ffd6e6, #fff1f6);
@@ -69,41 +116,17 @@ body.locked {
   animation: bounce 1.8s infinite;
 }
 
-/* Scroll animation */
 @keyframes bounce {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(8px); }
 }
 
-/* Page background */
-body {
-  background: linear-gradient(135deg, #fdeff4, #fff5f8);
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  color: #333;
-}
-
-/* Main headings */
-h1 {
-  color: #d63384;
-  font-size: 38px;
-  margin-top: 30px;
-}
-
-h2 {
-  color: #b03060;
-  margin: 40px 0 20px;
-}
-
-/* Timeline container */
+/* Memories section */
 #memories {
   position: relative;
   padding-left: 20px;
 }
 
-/* Memory card */
 .memory {
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(6px);
@@ -116,7 +139,6 @@ h2 {
   animation: fadeInUp 0.7s ease both;
 }
 
-/* Date styling */
 .memory h3 {
   display: inline-block;
   background: #ffd6e6;
@@ -127,7 +149,6 @@ h2 {
   margin-bottom: 12px;
 }
 
-/* Paragraph */
 .memory p {
   font-size: 15px;
   line-height: 1.7;
@@ -158,12 +179,18 @@ h2 {
   transform: scale(1.03);
 }
 
-/* Videos */
-video {
-  width: 360px;
-  max-width: 100%;
-  border-radius: 18px;
+/* Videos & Iframes */
+.media video,
+.media iframe {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 10px;
   box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+  background: black;
 }
 
 /* Animation */
@@ -183,96 +210,3 @@ footer {
   font-size: 14px;
   color: #777;
 }
-
-/* Password lock screen */
-/* FULL SCREEN LOCK */
-.lockScreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  width: 100vw;
-  height: 100vh;
-
-  background: linear-gradient(135deg, #ffd6e8, #fbb1d3);
-  z-index: 9999;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CUTE CENTER BOX */
-.lock-box {
-  background: white;
-  padding: 40px 35px;
-  border-radius: 20px;
-
-  text-align: center;
-  width: 90%;
-  max-width: 400px;
-
-  box-shadow: 0 20px 40px rgba(214,51,132,0.25);
-}
-
-/* TITLE */
-.lock-box h1 {
-  font-size: 34px;
-  color: #d63384;
-  margin-bottom: 10px;
-}
-
-/* SUBTEXT */
-.lock-box p {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 25px;
-}
-
-/* PASSWORD INPUT */
-.lock-box input {
-  width: 100%;
-  padding: 14px;
-  font-size: 18px;
-
-  border-radius: 30px;
-  border: 1px solid #ccc;
-  outline: none;
-
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* BUTTON */
-.lock-box button {
-  width: 100%;
-  padding: 14px;
-
-  font-size: 18px;
-  font-weight: bold;
-
-  border: none;
-  border-radius: 30px;
-  background: #d63384;
-  color: white;
-
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.lock-box button:hover {
-  background: #b72b6f;
-}
-.media img,
-.media video,
-.media iframe {
-  width: 100%;
-  max-width: 360px;
-  height: auto;
-  aspect-ratio: 9 / 16;   /* perfect for mobile videos */
-  object-fit: cover;
-  border-radius: 16px;
-  margin-top: 10px;
-  background: black;
-}
-
