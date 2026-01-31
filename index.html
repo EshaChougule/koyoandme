@@ -1,834 +1,157 @@
 <!DOCTYPE html>
 <html>
- <head>
-        <meta charset="UTF-8">
-        <title>You and Me</title>
-        <link rel="stylesheet" href="style.css">
- </head>
-
+<head>
+    <meta charset="UTF-8">
+    <title>You and Me</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
+    <!-- LOCK SCREEN -->
     <div id="lockScreen">
-    <div class="lock-box">  
-  <h1>🔐 Private Space</h1>
-  <p>Only for Koyo & Me 🤍</p>
+        <div class="lock-box">  
+            <h1>🔐 Private Space</h1>
+            <p>Only for Koyo & Me 🤍</p>
+            <input type="password" id="password" placeholder="Enter password">
+            <br><br>
+            <button onclick="checkPassword()">Enter</button>
+            <p id="errorMsg"></p>
+        </div>
+    </div>
 
-  <input type="password" id="password" placeholder="Enter password">
-  <br><br>
-  <button onclick="checkPassword()">Enter</button>
+    <!-- MAIN CONTENT -->
+    <div id="mainContent" style="display:none;">
 
-  <p id="errorMsg"></p>
-  </div>
-</div>
-
-<div id="mainContent" style="display:none;">
+        <!-- COVER SECTION -->
         <section id="cover">
-  <h1>Koyo & Me</h1>
-  <p class="tagline">A journey of us, written in moments 🤍</p>
-  <p class="scroll">Scroll to our memories ↓</p>
-</section>
-
-<section id="memories">
-    <h2>Our Memories</h2>
-
-    <div class="memory">
-        <h3>21 September 2024</h3>
-        <p>
-            Koyo agav tula mahiti ahe apli firdst meeting ?? haaa ik he exact first meeting hecha agoadr bhetela ahe apan according to
-            you the day it was raining and according to me it was the day we were going in by one class to anouce about fireless cooking competition
-            but i dont have  
-        </p>
-
-    <div class="media">
-        <img src="images/21sep.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>23 September 2024</h3>
-        <p>
-            koyo agav, fireless cooking
-        </p>
-
-    <div class="gallery">
-        <img src="images/23sepA.jpeg" alt="Memory 1">
-
-       <iframe
-    src="https://youtube.com/shorts/t_q9jI4ZkUs>
-width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-
-
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>27 September 2024</h3>
-        <p>
-            koyo agav, incite 
-        </p>
-
-    <div class="media">
-        <img src="images/27sepa.jpeg" alt="Memory photo">
-    
-    <iframe
-    src="https://drive.google.com/file/d/1avU5NJlLoA_9lIMYR4F4K9JSkm5LNpag/preview" >
-   width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    <iframe
-    src="https://drive.google.com/file/d/1HBiGmZxnOK5Yw65qhoD9TmzlIrEoX9-z/preview" >
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>28 December 2024</h3>
-        <p>
-            koyo agav, Military mahadev 
-        </p>
-
-    <div class="media">
-        <img src="images/28dec.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>05 March 2025</h3>
-        <p>
-            koyo agav, Mandoli 
-        </p>
-
-    <div class="media">
-        <img src="images/5march.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-
-    <div class="memory">
-        <h3>29 March 2025</h3>
-        <p>
-            koyo agav, savgoan 
-        </p>
-
-    <div class="media">
-        <img src="images/29march.jpeg" alt="Memory photo">
-
-    <div class="media">
-        <img src="images/29marchb.jpeg" alt="Memory photo">
-    </div>
-
-   <iframe
-    src="https://drive.google.com/file/d/1Su-QIdWP7kCW05GIjtq1GkOX8Wkoi_uu/preview" >
-   width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>4 April 2025</h3>
-        <p>
-            koyo agav, Kolhapur 
-        </p>
-
-    <div class="media">
-        <img src="images/4april.jpeg" alt="Memory photo">
-
-    <div class="media">
-        <img src="images/4aprilb.jpeg" alt="Memory photo">
-    </div>
-
-    <iframe
-    src="https://drive.google.com/file/d/1DViJE235zjZkG7gvWUmLLxC7EqVDY2Fk/preview" >
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    
-
-    <div class="memory">
-        <h3>10 April 2025</h3>
-        <p>
-            koyo agav, yellur ghad 
-        </p>
-
-    <div class="media">
-        <img src="images/10april.jpeg" alt="Memory photo">
-    </div>
-
-    <div class="media">
-        <img src="images/10aprilb.jpeg" alt="Memory photo">
-    </div>
-
-    </div>
-
-    <div class="memory">
-        <h3>16 April 2025</h3>
-        <p>
-            koyo agav, ghari 
-        </p>
-
-    <div class="media">
-        <img src="images/16april.jpeg" alt="Memory photo">
-    
-
-    <iframe
-    src="https://drive.google.com/file/d/1XMdbRlLQrXhfpBLrTcxmxLcoB9fOEckN/preview" >
-   width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>1 May 2025</h3>
-        <p>
-            koyo agav, kolhapur2 
-        </p>
-
-    <div class="media">
-        <img src="images/1may.jpeg" alt="Memory photo">
-    
-
-    <iframe
-    src="https://drive.google.com/file/d/1u0YHRukQ_TMjs9xQo-fEc0PCn368LGTd/preview" >
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>19 May 2025</h3>
-        <p>
-            koyo agav, first kiss 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1KcBpJbTXQcVuv6C66TxqYirHdnUsYvEV/preview" >
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>30 May 2025</h3>
-        <p>
-            koyo agav, his ghari 
-        </p>
-
-    <div class="media">
-        <img src="images/30may.jpeg" alt="Memory photo">
-        <iframe
-    src="https://drive.google.com/file/d/1P-NbLIuzy7Z-3bL4xqiG-rMKpu7n2xxX/preview" >
-       width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>1 June 2025</h3>
-        <p>
-            koyo agav, savgoan mandoli ride 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1KPQ9M2XwdXgFQuvtwldMfRYuDJKwCXsE/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>2 June 2025</h3>
-        <p>
-            koyo agav, kankumbi
-        </p>
-
-    <div class="media">
-        <img src="images/2june.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>7 June 2025</h3>
-        <p>
-            koyo agav, waffle 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1dPem3QR-KEvbqFV5z1eLl6bseX27QvDx/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>9 June 2025</h3>
-        <p>
-            koyo agav, wild sugar
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1sT0sjjAt95rQl8GN6h2YXMVg6iynBVsU/preview">
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>13 June 2025</h3>
-        <p>
-            koyo agav, shop
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1w0qLnbeEYM1ArJ6l77KOjb-C-mgUGcL1/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>20 June 2025</h3>
-        <p>
-            koyo agav, mandoli2
-        </p>
-
-    <div class="media">
-        <img src="images/20june.jpeg" alt="Memory photo">
-        <iframe
-    src="https://drive.google.com/file/d/10tFYYmZIqcMOXmWo-9OGbfQW7Kqd1_XF/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>11 July 2025</h3>
-        <p>
-            koyo agav, flower 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1cID8JETePrYwEOrck2pYqQq3aB_ok0kO/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>12 July 2025</h3>
-        <p>
-            koyo agav, momo
-        </p>
-
-    <div class="media">
-        <img src="images/12july.jpeg" alt="Memory photo">
-        <iframe
-    src="https://drive.google.com/file/d/1Nr5G6tmUlhWYKfhCiwfVfcNPnvKjk5yQ/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>20 July 2025</h3>
-        <p>
-            koyo agav, mandoli3 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1mELf_QI8NZFjAi_pujHzGDDEjJX4n9Y-/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>24 July 2025</h3>
-        <p>
-            koyo agav, kfc 
-        </p>
-
-    <div class="media">
-       <iframe
-    src="https://drive.google.com/file/d/1O1so5Y2xQZ1WMRMPCs2-Ug8WQWEux4Cn/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-        <iframe
-    src="https://drive.google.com/file/d/1Nj7uMqZ9Fm9w5OF5JFf2cNjZ65jxFrkr/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>25 July 2025</h3>
-        <p>
-            koyo agav, mcd1 
-        </p>
-
-    <div class="media">
-        <img src="images/25july.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>26 July 2025</h3>
-        <p>
-            koyo agav, incite
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1vdS1dtEJryzu5kLTCB1cpM5Z0gAMzRIR/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-
- <div class="memory">
-        <h3>28 July 2025</h3>
-        <p>
-            koyo agav, laptop tour1 
-        </p>
-
-    <div class="media">
-        <img src="images/28july.jpeg" alt="Memory photo">
-        <iframe
-    src="https://drive.google.com/file/d/1JNlZHhIlZSuoxqAlwwriKqIGOVK02s4g/preview" >
-       width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>29 July 2025</h3>
-        <p>
-            koyo agav, laptop tour2 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1xzmhfz8Aiuu-bMnxsYKeT0JB5M_QL6bl/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-        <iframe
-    src="https://drive.google.com/file/d/1QL6vnNSi0AjJvpUDu26mrICP_ZokkOAY/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>2 August 2025</h3>
-        <p>
-            koyo agav, mcd2 
-        </p>
-
-    <div class="media">
-       <iframe
-    src="https://drive.google.com/file/d/1s_529wDLfMo34IuNQ_5LQttuDG_qHPAv/preview">
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>5 August 2025</h3>
-        <p>
-            koyo agav, chidlela 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1aCsJZeynIyjbz81hfNb_Fz11ZEIM7Rvv/preview">
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>6 August 2025</h3>
-        <p>
-            koyo agav, gokak 
-        </p>
-
-    <div class="media">
-        <img src="images/6aug.jpeg" alt="Memory photo">
-    
-    <iframe
-    src="https://drive.google.com/file/d/1HRfOifAXJr5pngXwZ8MZDQ7tSFXGREVb/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-      <iframe
-    src="https://drive.google.com/file/d/1QkvRQ4Kec1uwDchmKjfm3eXFpYR-5_qT/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>7 August 2025</h3>
-        <p>
-            koyo agav, green gate  
-        </p>
-
-    <div class="media">
-        <img src="images/7aug.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>11 August 2025</h3>
-        <p>
-            koyo agav, lappie
-        </p>
-
-    <div class="media">
-       <iframe
-    src="https://drive.google.com/file/d/1HDno9Q08mNgcKCw4TTVZqeAlaBl0o_8X/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>1 September 2025</h3>
-        <p>
-            koyo agav, first love 
-        </p>
-
-    <div class="media">
-        <iframe
-    src= "https://drive.google.com/file/d/1JKYqln2uVFygJ76d7ogV2YyxAPZaaMji/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-        <iframe
-    src="https://drive.google.com/file/d/1NX071t6-n7ZryrLznum1HTYqAeMzwrjK/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>19 September 2025</h3>
-        <p>
-            koyo agav, batch 
-        </p>
-
-    <div class="media">
-        <img src="images/19sep.jpeg" alt="Memory photo">
-        <img src="images/19sepb.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>22 September 2025</h3>
-        <p>
-            koyo agav, laptop 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1WFkHnVxpvtvQvm0tOOWk3WBI0BHPNATJ/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>26 September 2025</h3>
-        <p>
-            koyo agav, navrang 1
-        </p>
-
-    <div class="media">
-        <img src="images/26sep.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-     <div class="memory">
-        <h3>1 October 2025</h3>
-        <p>
-            koyo agav, gomtesh 
-        </p>
-
-    <div class="media">
-        <img src="images/1oct.jpeg" alt="Memory photo">
-    </div>
-    </div>
-    
-    <div class="memory">
-        <h3>17 October 2025</h3>
-        <p>
-            koyo agav, birthday msg 
-        </p>
-
-    <div class="media">
-        <img src="images/17oct.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>18 October 2025</h3>
-        <p>
-            koyo agav, birthday celebration 
-        </p>
-
-    <div class="media">
-        <img src="images/18oct.jpeg" alt="Memory photo">
-    </div>
-    </div>
-    
-    <div class="memory">
-        <h3>14 November 2025</h3>
-        <p>
-            koyo agav, sundi
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1MwiBoZUxDZXG2_nOFU96WFnrCUMP00er/preview" >
-       width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-        <iframe
-    src="https://drive.google.com/file/d/1tVyEtTVI_EynFjtIi653SbYR7gJ5sBfW/preview" >
-       width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-
-    <div class="memory">
-        <h3>10 December 2025</h3>
-        <p>
-            koyo agav, goa border 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/1_XWATqIfTpDwhFYzxn86uCTDrSzOQjOD/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-        <iframe
-    src="https://drive.google.com/file/d/1f6B-2cBEUS9PrLw16CAWyRSVHvsn9DJ5/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>15 December 2025</h3>
-        <p>
-            koyo agav, abrista 
-        </p>
-
-    <div class="media">
-        <img src="images/15dec.jpeg" alt="Memory photo">
-    <iframe
-    src="https://drive.google.com/file/d/1TZdp09vBNHr6KOK-K4Sq6C70Sswj2iMN/preview" >
-        width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>17 December 2025</h3>
-        <p>
-            koyo agav, his home 
-        </p>
-
-    <div class="media">
-         <iframe
-    src="https://drive.google.com/file/d/1xF4GdU2_BhF4-MYLTLpu1ghK0VKgM3iQ/preview" >
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-     <iframe
-    src="https://drive.google.com/file/d/1eUSGjHVoH7f2v-HWDx__xUBzXfmXrJeM/preview" >
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>28 December 2025</h3>
-        <p>
-            koyo agav, military mahadev
-        </p>
-
-    <div class="media">
-        <img src="images/28dec25.jpeg" alt="Memory photo">
-    </div>
-    </div>
-
-    <div class="memory">
-        <h3>25 January 2026</h3>
-        <p>
-            koyo agav, rangoli 
-        </p>
-
-    <div class="media">
-        <iframe
-    src="https://drive.google.com/file/d/12aMkjDOKdXccdloOYiaGCeD8lxTnh0oB/preview">
-
-    width="360"
-    height="220"
-    style="border-radius:12px;"
-    allowfullscreen>
-  </iframe>
-    </div>
-    </div>
-    
-
-<footer>
-  <p>Made with 💖</p>
-</footer>
-
-
-</div>
-<script>
- 
-    document.body.style.overflow = "hidden";
-  function checkPassword() {
-    const password = document.getElementById("password").value;
-    const correctPassword = "koyoandme";
-
-    if (password === correctPassword) {
-      document.getElementById("lockScreen").style.display = "none";
-      document.getElementById("mainContent").style.display = "block";
-      document.body.style.overflow = "auto";
-    } else {
-      document.getElementById("errorMsg").innerText = "Wrong password 💔";
-    }
-  }
-</script>
-
+            <h1>Koyo & Me</h1>
+            <p class="tagline">A journey of us, written in moments 🤍</p>
+            <p class="scroll">Scroll to our memories ↓</p>
+        </section>
+
+        <!-- MEMORIES SECTION -->
+        <section id="memories">
+            <h2>Our Memories</h2>
+
+            <!-- MEMORY EXAMPLE -->
+            <div class="memory">
+                <h3>21 September 2024</h3>
+                <p>
+                    Koyo agav tula mahiti ahe apli first meeting ?? Haaa ik he exact first meeting
+                    hecha agodar bhetela ahe apan according to you the day it was raining and 
+                    according to me it was the day we were going in by one class to announce about 
+                    fireless cooking competition but I don’t have…
+                </p>
+                <div class="media">
+                    <img src="images/21sep.jpeg" alt="Memory photo">
+                </div>
+            </div>
+
+            <div class="memory">
+                <h3>23 September 2024</h3>
+                <p>koyo agav, fireless cooking</p>
+                <div class="media">
+                    <img src="images/23sepA.jpeg" alt="Memory 1">
+                </div>
+                <div class="media">
+                    <iframe
+                        width="360"
+                        height="220"
+                        src="https://www.youtube.com/embed/t_q9jI4ZkUs"
+                        style="border-radius:12px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="memory">
+                <h3>27 September 2024</h3>
+                <p>koyo agav, incite</p>
+                <div class="media">
+                    <img src="images/27sepa.jpeg" alt="Memory photo">
+                </div>
+                <div class="media">
+                    <iframe
+                        width="360"
+                        height="220"
+                        src="https://drive.google.com/file/d/1avU5NJlLoA_9lIMYR4F4K9JSkm5LNpag/preview"
+                        style="border-radius:12px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="media">
+                    <iframe
+                        width="360"
+                        height="220"
+                        src="https://drive.google.com/file/d/1HBiGmZxnOK5Yw65qhoD9TmzlIrEoX9-z/preview"
+                        style="border-radius:12px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- NEXT MEMORY -->
+            <div class="memory">
+                <h3>28 December 2024</h3>
+                <p>koyo agav, Military mahadev</p>
+                <div class="media">
+                    <img src="images/28dec.jpeg" alt="Memory photo">
+                </div>
+            </div>
+
+            <div class="memory">
+                <h3>05 March 2025</h3>
+                <p>koyo agav, Mandoli</p>
+                <div class="media">
+                    <img src="images/5march.jpeg" alt="Memory photo">
+                </div>
+            </div>
+
+            <div class="memory">
+                <h3>29 March 2025</h3>
+                <p>koyo agav, savgoan</p>
+                <div class="media">
+                    <img src="images/29march.jpeg" alt="Memory photo">
+                </div>
+                <div class="media">
+                    <img src="images/29marchb.jpeg" alt="Memory photo">
+                </div>
+                <div class="media">
+                    <iframe
+                        width="360"
+                        height="220"
+                        src="https://drive.google.com/file/d/1Su-QIdWP7kCW05GIjtq1GkOX8Wkoi_uu/preview"
+                        style="border-radius:12px;"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Repeat this pattern for all remaining memories -->
+            <!-- Each video/image has its own .media div -->
+            <!-- All iframes now have proper width/height/style inside tag -->
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>Made with 💖</p>
+        </footer>
+    </div>
+
+    <!-- PASSWORD SCRIPT -->
+    <script>
+        document.body.style.overflow = "hidden";
+        function checkPassword() {
+            const password = document.getElementById("password").value;
+            const correctPassword = "koyoandme";
+            if (password === correctPassword) {
+                document.getElementById("lockScreen").style.display = "none";
+                document.getElementById("mainContent").style.display = "block";
+                document.body.style.overflow = "auto";
+            } else {
+                document.getElementById("errorMsg").innerText = "Wrong password 💔";
+            }
+        }
+    </script>
 </body>
-
 </html>
-
-
-
-
