@@ -263,3 +263,16 @@ footer {
 .lock-box button:hover {
   background: #b72b6f;
 }
+.media img,
+.media video,
+.media iframe {
+  width: 100%;
+  max-width: 360px;
+  height: auto;
+  aspect-ratio: 9 / 16;   /* perfect for mobile videos */
+  object-fit: cover;
+  border-radius: 16px;
+  margin-top: 10px;
+  background: black;
+}
+
